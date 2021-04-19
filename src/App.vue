@@ -1,17 +1,28 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="columns is-multiline">
+      <Card 
+      img="https://cdn1.ozone.ru/s3/multimedia-d/6007526173.jpg"
+      msg = "Таблетки для посудомоечной машины Finish AllinOne бесфосфатные, 100 шт" 
+      price="1 205 ₽"
+      />
+      <Card 
+      img="https://cdn1.ozone.ru/s3/multimedia-d/6007526173.jpg"
+      msg = "Таблетки для посудомоечной машины Finish AllinOne бесфосфатные, 100 шт" 
+      price="1 205 ₽"
+      />
+ 
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Card from './components/Card.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Card
   }
 }
 </script>
